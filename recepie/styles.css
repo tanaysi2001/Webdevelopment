@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+height:800px;
+width:100vw;
+overflow-x: none;
+}
+
+.navContainer{
+width: 100vw;
+min-height:80px;
+background: #833AB4;
+background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+padding:10px;
+
+display:flex;
+justify-content: center; 
+align-items: center;
+overflow-x: none;
+}
+
+#navHead{
+    font-size: 2rem;
+    color: rgb(247, 251, 252);
+}
+
+#navList{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    font-size: 2rem; 
+    margin-right:15px;
+    margin-left: 15px;
+}
+nav{
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navItems{
+    display:flex;
+    gap: 20px;
+}
+#navItems a{
+ color: rgb(255, 255, 255);
+
+}
+.FooterBox{
+    min-height: 60px;
+    width: 100vw;
+    background: #833AB4;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    
+}
+
+.FooterBox p{
+    font-size :1.7rem;
+    /* text-align: center; */
+}
+.ContentBox{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height:800px;
+    margin: auto;
+    /* text-align: center; */
+    /* border:1px solid black; */
+    /* border-radius: 20px; */
+    border-radius:30px;
+    gap:50px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    box-shadow: 2px 2px 20px black;
+    background: #020024;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    opacity:0;
+    transition:all 0.5s linear 0s;
+    
+}
+.items{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.RightBox img{
+    height:200px;
+    width:200px;
+    border-radius: 20px;
+    margin-right:10px;
+    transition: all 0.3s linear 0s;
+}
+.RightBox:hover{
+    transform: scale(1.2);
+    /* box-shadow: 0px 0px 10px 2px black;
+    border-radius:20px; */
+}
+.LeftBox{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    
+    
+}
+.LeftBox h2{
+
+    font-size: 2rem;
+}
+
+.IngBox{
+    font-size:1.4rem;
+}
+.Recepie{
+    font-size:1.1rem;
+}
+.RightBox{
+    position:relative;
+    overflow:hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.RightBox .ImageWrapper .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height:98%;
+    width:95.6%;
+    background-color: rgba(94, 91, 91, 0.401);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    opacity:0;
+    transition: all 0.3s linear 0s;
+    
+}
+.RightBox:hover .overlay{
+opacity:1;
+
+}
+.RightBox .ImageWrapper .overlay span{
+    color:white;
+    font-size:1.2rem;
+}
+.LeftBox .IngBox {
+    box-shadow: 0px 0px 10px 2px rgb(125, 122, 122);
+    display: inline-block;
+    border-radius: 20px;
+    width: 200px; /* or auto */
+    padding-left:10px; /* Add space for bullets */
+    list-style-position: inside;
+    transition:all 0.3s linear 0s;
+    opacity:0.1;
+    
+}
+.LeftBox:hover .IngBox{
+    transform:scale(1.02);
+    background-color: rgba(80, 79, 79, 0.751);
+    opacity:1;
+}
+
+.items .LeftBox .Recepie{
+    box-shadow: 0px 0px 10px 2px rgb(125, 122, 122);
+    display: inline-block;
+    border-radius: 20px;
+    width: 400px; /* or auto */
+    padding-left:10px; /* Add space for bullets */
+    list-style-position: inside;
+    transition:all 0.3s linear 0s;
+    opacity:0.1;
+}
+ .items .LeftBox:hover .Recepie{
+    transform:scale(1.02);
+    background-color: rgba(110, 108, 108, 0.751);
+    opacity:1;
+}
+.items h2{
+    transition:all 0.2s linear 0s;
+}
+.items:hover h2{
+    transform: scale(1.02);
+    color:white;
+}
+.ContentBox:hover{
+    opacity:1;
+    
+}
+
+

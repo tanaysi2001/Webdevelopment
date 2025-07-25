@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 300px;
+        width: 650px;
+        background: rgb(64, 18, 62);
+        display: flex;
+      }
+      .box .leftBox{
+        height:100%;
+        width:50%;
+        border-right: 1px solid black;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        padding-top: 20px;
+        gap:25px;
+      }
+
+      .box .leftBox .heading h2,p{
+        text-align: center;
+      }
+
+      .box .leftBox h2,p,h5{
+        color: rgba(255, 255, 255, 0.409);
+      }
+      .box .rightBox{
+        overflow: hidden;
+      }
+      .box .rightBox img{
+        height:350px;
+        width:350px;
+      }
+      .box .leftBox .footerContent{
+        display:flex;
+        gap:30px;
+      }
+      /* <--! hovering effects --> */
+
+      .box .leftBox .heading h2:hover{
+        transform:scale(1.02);
+        color:rgba(244, 233, 233, 0.996);
+      }
+
+      .box .leftBox .content p:hover{
+        transform:scale(1.02);
+        color:rgba(244, 233, 233, 0.996);
+      }
+
+      .box .leftBox .footerContent h2:hover{
+        transform:scale(1.02);
+        color:rgba(244, 233, 233, 0.996);
+      }
+
+      .box .leftBox .footerContent h5:hover{
+        transform:scale(1.02);
+        color:rgba(244, 233, 233, 0.996);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="leftBox">
+
+            <div class="heading">
+                <h2>Get Insights that help<br>your buisness grow</h2>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Cum doloribus et at? Minima saepe modi a eum. Sequi quam quibusdam, 
+                   exercitationem impedit error maiores incidunt?
+                </p>
+            </div>
+
+            <div class="footerContent">
+                <div class="first">
+                    <p><h2>10K+</h2><h5>Comments</h5></p>
+                </div>
+                <div class="second">
+                    <p><h2>214<h5>Paid Users</h5></h2></p>
+                </div>
+                <div class="third">
+                    <p><h2>12M+<h5>Views</h5></h2></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightBox">
+          <img
+            src="C:\Users\thana\webdevelopment\Projects\cards\card3\images\icon.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

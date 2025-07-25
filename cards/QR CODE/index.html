@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background: #020024;
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+            display:flex;
+            /* flex-direction:column; */
+            justify-content:center;
+            align-items:center;
+        }
+        .box{
+            width:290px;
+            height:400px;
+            background:rgb(147, 52, 52);
+            background:linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            border-radius:20px;
+            
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:10px; 
+            padding:15px;
+        }
+        .container .box img{
+            height:70%;
+            width:100%;
+            border-radius:20px;
+            
+        }
+        .box h3{
+            transition:all 0.5s linear 0s;
+        }
+       .box h3:hover{
+        transform: scale(1.02);
+        color:white;
+       }
+       .box img{
+         transition:all 0.5s linear 0s;
+       }
+       .box img:hover{
+        transform: scale(1.05);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="C:\Users\thana\webdevelopment\Projects\cards\card1\images\qr.png" alt="qrcode">
+
+            <h3>Adhishakthi Industries,We create what you think!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, adipisci.</p>
+        </div>
+    </div>
+</body>
+</html>
